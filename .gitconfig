@@ -1,0 +1,36 @@
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[rerere]
+  enabled = 1
+[diff]
+  renames = true
+  copies = true
+[push]
+  default = simple
+[core]
+  editor = /usr/bin/vim
+[http]
+  postBuffer = 209715200
+[alias]
+  root = !pwd
+  exec = "!exec "
+[help]
+  autocorrect = 1
+[alias]
+  append = commit --amend -C HEAD
+  newbranch = checkout origin/master -b
+  co = checkout
+[pull]
+  rebase = true
+[rebase]
+  autostash = true
+[init]
+  defaultBranch = master

@@ -1,0 +1,71 @@
+# OSX files
+.CFUserTextEncoding
+.DS_Store
+.Trash
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+
+# history
+.bash_history
+.bash_sessions
+.lesshst
+.python_history
+.scala_history
+.zsh_history
+ 
+# Java class files
+*.class
+*.jar
+
+# vim
+.vim/.netrwhist
+.vim/bundle/*
+!.vim/bundle/Vundle.vim
+.vim/spell/en.utf-8.add.spl
+.viminfo
+
+# ruby
+.bundle/
+.gem/
+.gemrc
+.rbenv/
+ 
+# misc
+.antigen
+.atom
+.cache
+.gitstats/
+.ivy2/
+.nodenv
+.op
+.oracle_jre_usage/
+.pex
+.pyenv
+.strato/
+.watchman
+.tools-cache/home/
+.tss/
+.vscode/
+*.zwc
+
+# node stuff
+.config
+.npm
+
+# credentials
+.arcrc
+.netrc
+.ssh/id_*
+!.ssh/id_*.pub
+.ssh/known_hosts
+.jira-credentials.yml
+
+# subrepos
+stripe/
