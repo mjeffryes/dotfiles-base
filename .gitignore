@@ -41,6 +41,7 @@ Public/
 .antigen
 .atom
 .cache
+.dotfiles/
 .gitstats/
 .ivy2/
 .nodenv
