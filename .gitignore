@@ -55,6 +55,7 @@ Public/
 .tss/
 .vscode/
 *.zwc
+nohup.out
 
 # node stuff
 .config
