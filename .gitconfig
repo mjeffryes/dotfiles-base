@@ -13,9 +13,14 @@
 [diff]
   renames = true
   copies = true
+[fetch]
+  prune = true
 [push]
   default = simple
+# http://stackoverflow.com/questions/18257622/why-is-git-core-preloadindex-default-value-false
 [core]
+  preloadindex = true
+  deltabasecachelimit = 4g
   editor = /usr/bin/vim
 [http]
   postBuffer = 209715200
@@ -34,3 +39,6 @@
   autostash = true
 [init]
   defaultBranch = master
+[feature]
+  manyfiles = true
+
