@@ -5,7 +5,7 @@ function .base {
     /usr/bin/git --git-dir="$HOME/.dotfiles/base" --work-tree="$HOME" "$@"
 }
 
-git clone --bare git@github.com:mjeffryes/dotfiles-base "$HOME/.dotfiles/base"
+git clone --bare https://github.com/mjeffryes/dotfiles-base "$HOME/.dotfiles/base"
 
 if .base checkout; then
     # worked fine, we're done
