@@ -29,6 +29,7 @@ iterm2
 notational-velocity
 qbserve
 quicksilver
+resilio-sync
 slack
 "
 
