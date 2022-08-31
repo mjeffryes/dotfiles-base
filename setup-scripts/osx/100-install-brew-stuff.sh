@@ -27,6 +27,7 @@ google-chrome
 grandperspective
 iterm2
 notational-velocity
+obsidian
 qbserve
 quicksilver
 resilio-sync
