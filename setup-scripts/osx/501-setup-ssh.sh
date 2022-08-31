@@ -1,6 +1,4 @@
 if which op; then
-    await_user_action "Extract id_rsa(.pub) and id_ed25519(.pub) from 1password to .ssh"
-else
     # install secrets
     op list vaults || eval $(op signin my.1password.com 1password@mjeffryes.net)
 
@@ -15,6 +13,8 @@ else
     extract id_rsa.pub
     extract id_ed25519
     extract id_ed25519.pub
+else
+    await_user_action "Extract id_rsa(.pub) and id_ed25519(.pub) from 1password to .ssh"
 fi
 
 # add ssh identity to keychain
