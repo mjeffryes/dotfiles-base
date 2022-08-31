@@ -5,6 +5,3 @@ function caps_as_esc {
 function clear_keymap {
   hidutil property --set '{"UserKeyMapping":[]}'
 }
-
-export -f caps_as_esc
-export -f clear_keymap

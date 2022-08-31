@@ -37,7 +37,17 @@ preexec() {
 [[ -z "${terminfo[khome]}" ]] || bindkey "${terminfo[khome]}" beginning-of-line
 [[ -z "${terminfo[kend]}" ]] || bindkey "${terminfo[kend]}" end-of-line
 [[ -z "${terminfo[kich1]}" ]] || bindkey "${terminfo[kich1]}" overwrite-mode
+
 [[ -z "${terminfo[kdch1]}" ]] || bindkey -M vicmd "${terminfo[kdch1]}" vi-delete-char
 [[ -z "${terminfo[khome]}" ]] || bindkey -M vicmd "${terminfo[khome]}" vi-beginning-of-line
 [[ -z "${terminfo[kend]}" ]] || bindkey -M vicmd "${terminfo[kend]}" vi-end-of-line
 [[ -z "${terminfo[kich1]}" ]] || bindkey -M vicmd "${terminfo[kich1]}" overwrite-mode
+
+# ctrl-r should bring up history search
+# needs to run after vim bindings
+bindkey '^R' history-incremental-search-backward
+
+# search history with up and down arrows
+# needs to run after vim bindings
+bindkey "^[[A" up-line-or-search
+bindkey "^[[B" down-line-or-search
