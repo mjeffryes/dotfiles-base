@@ -70,3 +70,5 @@ Public/
 
 # subrepos
 stripe/
+workdir/
+workspace/
