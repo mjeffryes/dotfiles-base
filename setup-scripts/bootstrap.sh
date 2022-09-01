@@ -23,7 +23,8 @@ fi
 
 export -f .base
 
+os=$(uname -s | tr '[:upper:]' '[:lower:]')
 case ${os} in
     darwin) "$HOME/setup-scripts/setup-osx.sh";;
-    *) echo "Unrecognized os: $OS, skipping setup scripts"
+    *) echo "Unrecognized os: $os, skipping setup scripts"
 esac
