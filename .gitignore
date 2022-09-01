@@ -41,6 +41,7 @@ Public/
 .antigen
 .atom
 .cache
+.cocoapods/
 .dotfiles/
 .gitstats/
 .ivy2/

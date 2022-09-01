@@ -78,6 +78,12 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWritoeUSBStores -bool true
 
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
 killall Finder || true
 
 ## TEXTEDIT
@@ -114,6 +120,12 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 # Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed
 # Broken in Mojave
