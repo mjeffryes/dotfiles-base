@@ -51,7 +51,6 @@ Public/
 .oracle_jre_usage/
 .pex
 .pyenv
-.strato/
 .watchman
 .tools-cache/home/
 .tss/
@@ -71,6 +70,5 @@ Public/
 .jira-credentials.yml
 
 # subrepos
-stripe/
 workdir/
 workspace/
