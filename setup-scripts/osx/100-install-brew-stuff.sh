@@ -15,7 +15,6 @@ vim
 "
 brew install $formulae
 
-# brew install amazon-music #broken
 casks="
 1password-cli
 amethyst
@@ -32,6 +31,7 @@ qbserve
 quicksilver
 resilio-sync
 slack
+spotify
 "
 
 failed=()
