@@ -2,7 +2,7 @@
 set -ue -o pipefail
 
 # install brew
-which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 formulae="
 fd
@@ -16,6 +16,7 @@ vim
 brew install $formulae
 
 casks="
+1password
 1password-cli
 amethyst
 coconutbattery
