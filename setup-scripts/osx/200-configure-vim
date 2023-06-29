@@ -1,6 +1,10 @@
 #!/bin/bash
 set -uex -o pipefail
 
+function .base {
+    /usr/bin/git --git-dir="$HOME/.dotfiles/base" --work-tree="$HOME" "$@"
+}
+
 # initialize submodules
 .base submodule init
 .base submodule update
