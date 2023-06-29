@@ -20,7 +20,8 @@ Public/
 .python_history
 .scala_history
 .zsh_history
- 
+.zsh_sessions
+
 # Java class files
 *.class
 *.jar
@@ -64,9 +65,7 @@ Public/
 # credentials
 .arcrc
 .netrc
-.ssh/id_*
-!.ssh/id_*.pub
-.ssh/known_hosts
+.ssh
 .jira-credentials.yml
 
 # subrepos
