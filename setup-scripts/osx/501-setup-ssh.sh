@@ -1,12 +1,16 @@
+setup -e
+
+mkdir -p "${HOME}/.ssh"
+
 if which op; then
     # install secrets
-    op list vaults || eval $(op signin my.1password.com 1password@mjeffryes.net)
+    op vault list || eval $(op signin)
 
     function extract {
         file=$1
         touch "${HOME}/.ssh/$file"
         chmod 600 "${HOME}/.ssh/$file"
-        op get document $file > "${HOME}/.ssh/$file"
+        op document get $file > "${HOME}/.ssh/$file"
     }
 
     extract id_rsa
