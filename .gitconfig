@@ -46,3 +46,5 @@
 [feature]
   manyfiles = true
 
+[user]
+	useConfigOnly = true
