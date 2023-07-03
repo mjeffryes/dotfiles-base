@@ -57,6 +57,7 @@ Public/
 .tss/
 .vscode/
 *.zwc
+.zentracker/
 
 # node stuff
 .config

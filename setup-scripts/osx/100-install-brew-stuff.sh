@@ -4,14 +4,18 @@ set -ueo pipefail
 # install brew
 which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+brew tap mjeffryes/mjeffryes
+
 formulae="
 fd
+filesweeper
 reattach-to-user-namespace
 rg
 starship
 terminal-notifier
 tmux
 vim
+zentracker
 "
 brew install $formulae
 
