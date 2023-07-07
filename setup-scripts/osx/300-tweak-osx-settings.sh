@@ -84,6 +84,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
+# Automatically empty the Trash after 30 days
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
 killall Finder || true
 
 ## TEXTEDIT
