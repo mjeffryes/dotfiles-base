@@ -12,12 +12,12 @@ filesweeper
 reattach-to-user-namespace
 rg
 starship
+shellcheck
 terminal-notifier
 tmux
 vim
 zentracker
 "
-brew install $formulae
 
 casks="
 1password
@@ -30,6 +30,7 @@ flux
 google-chrome
 grandperspective
 iterm2
+meetingbar
 obsidian
 qbserve
 quicksilver
