@@ -22,8 +22,8 @@ else
 fi
 
 # add ssh identity to keychain
-ssh-add -K "$HOME/.ssh/id_rsa"
+ssh-add --apple-use-keychain "$HOME/.ssh/id_rsa"
 
 # add ssh identity to keychain
-ssh-add -K "$HOME/.ssh/id_ed25519"
+ssh-add --apple-use-keychain "$HOME/.ssh/id_ed25519"
 
