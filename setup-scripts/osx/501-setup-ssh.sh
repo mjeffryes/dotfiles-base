@@ -1,10 +1,10 @@
-setup -e
+set -euo pipefail
 
 mkdir -p "${HOME}/.ssh"
 
 if which op; then
     # install secrets
-    op vault list || eval $(op signin)
+    op whoami || eval $(op signin)
 
     function extract {
         file=$1
