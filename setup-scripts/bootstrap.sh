@@ -21,6 +21,9 @@ else
     echo "Checked out config."
 fi
 
+# use ssh for further interaction with the origin
+.base remote set-url origin git@github.com:mjeffryes/dotfiles-base
+
 export -f .base
 
 os=$(uname -s | tr '[:upper:]' '[:lower:]')
