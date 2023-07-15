@@ -33,7 +33,36 @@
 	<key>DHGoRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>github.com/stretchr/testify</key>
+			<dict>
+				<key>date</key>
+				<date>2023-07-12T18:33:36Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/stretchr/testify</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/stretchr/testify</string>
+				</dict>
+			</dict>
+			<key>io</key>
+			<dict>
+				<key>date</key>
+				<date>2023-07-14T22:26:59Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>io</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>io</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
@@ -58,7 +87,7 @@
 			<key>com.google.dagger:dagger</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:40Z</date>
+				<date>2023-07-14T22:27:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -72,7 +101,7 @@
 			<key>com.google.guava:guava</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:35Z</date>
+				<date>2023-07-10T22:25:27Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -86,7 +115,7 @@
 			<key>com.google.guava:guava-base</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:40Z</date>
+				<date>2023-07-10T22:25:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -100,7 +129,7 @@
 			<key>com.google.guava:guava-concurrent</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:33Z</date>
+				<date>2023-07-10T22:25:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -114,7 +143,7 @@
 			<key>com.google.protobuf:protobuf-java</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:41Z</date>
+				<date>2023-07-10T22:25:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -128,7 +157,7 @@
 			<key>com.google.truth:truth</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:37Z</date>
+				<date>2023-07-10T22:25:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -142,7 +171,7 @@
 			<key>com.pholser:junit-quickcheck-core</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:40Z</date>
+				<date>2023-07-10T22:25:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -156,7 +185,7 @@
 			<key>com.pholser:junit-quickcheck-examples</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:35Z</date>
+				<date>2023-07-10T22:25:28Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -170,7 +199,7 @@
 			<key>com.pholser:junit-quickcheck-generators</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:38Z</date>
+				<date>2023-07-10T22:25:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -184,7 +213,7 @@
 			<key>io.grpc:grpc-api</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:33Z</date>
+				<date>2023-07-10T22:25:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -198,7 +227,7 @@
 			<key>io.grpc:grpc-core</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:37Z</date>
+				<date>2023-07-10T22:25:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -212,7 +241,7 @@
 			<key>io.grpc:grpc-protobuf</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:38Z</date>
+				<date>2023-07-10T22:25:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -226,7 +255,7 @@
 			<key>joda-time:joda-time</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:39Z</date>
+				<date>2023-07-10T22:25:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -240,7 +269,7 @@
 			<key>junit:junit</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:35Z</date>
+				<date>2023-07-10T22:25:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -294,29 +323,41 @@
 	<true/>
 	<key>annotationsAreShown</key>
 	<false/>
+	<key>dateFormat</key>
+	<string>YYYY-MM-dd</string>
 	<key>docsets</key>
 	<dict>
 		<key>keywords</key>
-		<dict/>
+		<dict>
+			<key>~/Library/Application Support/Dash/Go DocSets/github.com stretchr testify/GoDoc.docset</key>
+			<string>go:</string>
+			<key>~/Library/Application Support/Dash/Go DocSets/io/GoDoc.docset</key>
+			<string>go:</string>
+		</dict>
 	</dict>
 	<key>feeds</key>
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Go.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2023-07-12T17:01:06Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Java_SE11.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:45:04Z</date>
+				<date>2023-07-10T22:25:31Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:44:40Z</date>
+				<date>2023-07-10T22:25:43Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Scala.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-06-28T22:45:04Z</date>
+				<date>2023-07-10T22:25:31Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
@@ -360,7 +401,7 @@
 			<key>name</key>
 			<string>Default</string>
 			<key>searchSnippets</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>icon</key>
@@ -371,6 +412,18 @@
 			<string>Search Snippets</string>
 			<key>searchSnippets</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>docsets</key>
+			<array>
+				<string>~/Library/Application Support/Dash/DocSets/Go/Go.docset</string>
+				<string>~/Library/Application Support/Dash/Go DocSets/io/GoDoc.docset</string>
+				<string>~/Library/Application Support/Dash/Go DocSets/github.com stretchr testify/GoDoc.docset</string>
+			</array>
+			<key>name</key>
+			<string>golang</string>
+			<key>searchSnippets</key>
+			<false/>
 		</dict>
 	</array>
 	<key>shouldRestoreTabs</key>
@@ -387,6 +440,8 @@
 	<true/>
 	<key>showInDock</key>
 	<true/>
+	<key>timeFormat</key>
+	<string>HH:mm</string>
 	<key>versionedDHCheatRepo</key>
 	<dict>
 		<key>installed</key>
