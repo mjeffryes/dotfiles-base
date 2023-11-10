@@ -45,12 +45,16 @@ Public/
 .cache
 .cocoapods/
 .dotfiles/
+.dotnet/
 .gitstats/
+.gradle/
+go/
 .ivy2/
 .nodenv
 .op
 .oracle_jre_usage/
 .pex
+.pulumi
 .pyenv
 .watchman
 .tools-cache/home/
