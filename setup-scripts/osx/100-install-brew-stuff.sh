@@ -11,8 +11,14 @@ eval $(brew shellenv)
 brew tap mjeffryes/mjeffryes
 
 formulae="
+asciinema
+atuin
+devbox
 fd
 filesweeper
+fzf
+gh
+jq
 reattach-to-user-namespace
 rg
 starship
@@ -30,6 +36,7 @@ amethyst
 coconutbattery
 dash
 docker
+firefox
 flux
 google-chrome
 grandperspective
@@ -41,6 +48,7 @@ quicksilver
 resilio-sync
 slack
 spotify
+zoom
 "
 
 declare -a failed

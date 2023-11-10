@@ -34,10 +34,94 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>github.com/lestrrat-go/jsschema</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:04:51Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/lestrrat-go/jsschema</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/lestrrat-go/jsschema</string>
+				</dict>
+			</dict>
+			<key>github.com/pulumi/pulumi/pkg/v3/codegen/schema</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:04:59Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/pkg/v3/codegen/schema</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/pkg/v3/codegen/schema</string>
+				</dict>
+			</dict>
+			<key>github.com/pulumi/pulumi/sdk/v3/go/common</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:05:22Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/common</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/common</string>
+				</dict>
+			</dict>
+			<key>github.com/pulumi/pulumi/sdk/v3/go/pulumi</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:05:00Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/pulumi</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/pulumi</string>
+				</dict>
+			</dict>
+			<key>github.com/pulumi/pulumi/sdk/v3/proto</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:05:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/proto</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/proto</string>
+				</dict>
+			</dict>
+			<key>github.com/pulumi/pulumi/sdk/v3/proto/go</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:05:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/proto/go</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/proto/go</string>
+				</dict>
+			</dict>
 			<key>github.com/stretchr/testify</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-12T18:33:36Z</date>
+				<date>2023-11-09T17:04:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -51,7 +135,7 @@
 			<key>io</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-14T22:26:59Z</date>
+				<date>2023-11-09T17:04:50Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -62,9 +146,38 @@
 					<string>io</string>
 				</dict>
 			</dict>
+			<key>pgregory.net/rapid</key>
+			<dict>
+				<key>date</key>
+				<date>2023-11-09T17:04:58Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>pgregory.net/rapid</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>pgregory.net/rapid</string>
+				</dict>
+			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>github.com/pulumi/pulumi/sdk/v3/go/common/resource</key>
+			<dict>
+				<key>date</key>
+				<date>2023-08-01T00:13:03Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/common/resource</string>
+					<key>platform</key>
+					<string>godoc</string>
+					<key>uniqueIdentifier</key>
+					<string>github.com/pulumi/pulumi/sdk/v3/go/common/resource</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHHaskellRepo</key>
 	<dict>
@@ -87,7 +200,7 @@
 			<key>com.google.dagger:dagger</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-14T22:27:00Z</date>
+				<date>2023-10-05T16:00:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -101,7 +214,7 @@
 			<key>com.google.guava:guava</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-10T22:25:27Z</date>
+				<date>2023-10-11T16:08:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -143,7 +256,7 @@
 			<key>com.google.protobuf:protobuf-java</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-10T22:25:30Z</date>
+				<date>2023-11-02T16:16:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -213,7 +326,7 @@
 			<key>io.grpc:grpc-api</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-10T22:25:26Z</date>
+				<date>2023-10-23T15:56:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -227,7 +340,7 @@
 			<key>io.grpc:grpc-core</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-10T22:25:32Z</date>
+				<date>2023-08-17T19:12:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -241,7 +354,7 @@
 			<key>io.grpc:grpc-protobuf</key>
 			<dict>
 				<key>date</key>
-				<date>2023-07-10T22:25:33Z</date>
+				<date>2023-10-23T15:57:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -329,9 +442,19 @@
 	<dict>
 		<key>keywords</key>
 		<dict>
+			<key>~/Library/Application Support/Dash/Go DocSets/github.com lestrrat-go jsschema/GoDoc.docset</key>
+			<string>go:</string>
+			<key>~/Library/Application Support/Dash/Go DocSets/github.com pulumi pulumi pkg v3 codegen schema/GoDoc.docset</key>
+			<string>go:</string>
+			<key>~/Library/Application Support/Dash/Go DocSets/github.com pulumi pulumi sdk v3 go common/GoDoc.docset</key>
+			<string>go:</string>
+			<key>~/Library/Application Support/Dash/Go DocSets/github.com pulumi pulumi sdk v3 go pulumi/GoDoc.docset</key>
+			<string>go:</string>
 			<key>~/Library/Application Support/Dash/Go DocSets/github.com stretchr testify/GoDoc.docset</key>
 			<string>go:</string>
 			<key>~/Library/Application Support/Dash/Go DocSets/io/GoDoc.docset</key>
+			<string>go:</string>
+			<key>~/Library/Application Support/Dash/Go DocSets/pgregory.net rapid/GoDoc.docset</key>
 			<string>go:</string>
 		</dict>
 	</dict>
