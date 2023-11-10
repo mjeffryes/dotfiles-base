@@ -25,6 +25,7 @@ filetype plugin indent on
 
 syntax on
 colorscheme solarized
+set re=0 "disable painfully slow regex based syntax highlighting
 
 call ucompleteme#Setup()
 
@@ -32,9 +33,12 @@ let g:syntastic_check_on_wq = 0
 
 let g:ale_linters = {
     \ 'dart': ['language_server'],
+    \ 'javascript': ['eslint'],
+    \ 'typescript': ['tsserver', 'eslint'],
 \}
 
 let g:ale_fixers = {
+      \ 'go': ['gofmt'],
       \ 'javascript': ['eslint'],
       \ 'javascriptreact': ['eslint'],
       \ 'typescript': ['eslint'],
@@ -133,20 +137,21 @@ if has("cscope")
   set csverb
 endif
 
-function! CGitPathToClipBoard()
-  let cur_path = expand('%:p')
-  let parts = split(cur_path, "workspace")
-  let rel_path = parts[1]
-  let rel_path_parts = split(rel_path, '/')
-  let repo = rel_path_parts[0]
-  let path = join(rel_path_parts[1:], '/')
-  if repo == "source2"
-    let repo = "source"
-  endif
-  let cg_path = "https://phabricator.twitter.biz/source/".repo."/browse/master/".path.";HEAD$".line('.')
-  let @* = cg_path
-  echo cg_path
+" GitBrowse invokes git-browse with the current file and lines and copies the
+" url to clipboard.
+function! GitBrowse() abort
+  let l:branch  = trim(system('git rev-parse --abbrev-ref HEAD 2>/dev/null'))
+  let l:filename = trim(system('git ls-files --full-name ' . expand('%')))
+  let l:remote = trim(system('git config branch.'.l:branch.'.remote || echo "origin" '))
+  " let l:cmd = 'git browse ' . l:remote . ' ' . l:filename
+  let l:cmd = 'git browse ' . l:remote . ' ' . l:filename . ' ' . a:firstline . ' ' . a:lastline
+  echo l:cmd
+  let l:url = system(l:cmd)
+  let @* = l:url
+  echo l:url
 endfunction
 
-nnoremap <F7> :call CGitPathToClipBoard()<cr>
+command! -range GBrowse <line1>,<line2> call GitBrowse()
+
+nnoremap <F7> :GBrowse <cr>
 nnoremap <F6> :Dash<cr>
