@@ -12,3 +12,38 @@ for repo in *; do
     alias ".$repo=git --git-dir=\"$HOME/.dotfiles/$repo\" --work-tree=\"$HOME\""
 done
 popd 1>/dev/null|| exit
+
+
+
+# helper function for devbox shell that automatically identifies if we need to switch to a new shell
+devboxdir="$HOME/.devboxdir"
+dbs() {
+  if [ -f "$devboxdir" ]; then
+    [ -z "$VERBOSE" ] ||
+    echo devbox dir set, cd there before continuing
+    cd -q "$(cat "$devboxdir")" || return 1
+    rm "$devboxdir"
+  fi
+
+  if ! [ -f "devbox.json" ]; then
+    [ -z "$VERBOSE" ] || echo "This isn't a devbox root, nothing to do"
+    return
+  fi
+
+  if [ -n "${DEVBOX_PROJECT_ROOT:-}" ]; then
+    if [[ "$(pwd -P)" == "$(cd -q "$DEVBOX_PROJECT_ROOT"; pwd -P)" ]]; then
+    [ -z "$VERBOSE" ] || echo "We're in the DEVBOX_PROJECT_ROOT, nothing to do."
+      return
+    fi
+
+    [ -z "$VERBOSE" ] || echo "Need to exit out of the current devbox shell to enter the new one"
+    pwd > "$devboxdir"
+    exit
+  fi
+
+  [ -z "$VERBOSE" ] || echo "We're in a devbox root with a clean shell, enter the devbox shell"
+  #trap dbs EXIT # register a trap to check again after the devbox shell exits
+  devbox shell
+  dbs
+  DEPTH="$((DEPTH--))"
+}
