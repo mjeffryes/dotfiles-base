@@ -10,13 +10,13 @@ KEYTIMEOUT=5
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'block' ]]; then
+    [[ $1 = 'block' ]]; then
     echo -ne '\e[1 q'
 
   elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
+    [[ ${KEYMAP} == viins ]] ||
+    [[ ${KEYMAP} = '' ]] ||
+    [[ $1 = 'beam' ]]; then
     echo -ne '\e[5 q'
   fi
 }
@@ -27,9 +27,8 @@ echo -ne '\e[5 q'
 
 # Use beam shape cursor for each new prompt.
 preexec() {
-   echo -ne '\e[5 q'
+  echo -ne '\e[5 q'
 }
-
 
 # Set the right keybindings for home/end/del/insert based on terminfo
 # Needs to run after activating vim mode
@@ -45,7 +44,8 @@ preexec() {
 
 # ctrl-r should bring up history search
 # needs to run after vim bindings
-bindkey '^R' history-incremental-search-backward
+# (Disabled as I'm now using atuin for history search)
+# bindkey '^R' history-incremental-search-backward
 
 # search history with up and down arrows
 # needs to run after vim bindings
