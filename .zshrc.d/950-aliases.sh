@@ -6,6 +6,9 @@ alias gl="git log --oneline --decorate --graph origin/master HEAD"
 alias gla="git log --oneline --decorate --graph --all"
 alias gup='git checkout origin/master -b gup && git fetch && git checkout - && git branch -D gup'
 
+alias vvim=/usr/bin/vim
+alias vim=nvim
+
 pushd "$HOME/.dotfiles/" 1>/dev/null || exit
 for repo in *; do
   [[ $repo =~ ^[a-z]+$ ]] || continue

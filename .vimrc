@@ -83,11 +83,13 @@ let g:autoformat_autoindent = 0
 " for debugging autoformatting
 "let g:autoformat_verbosemode=1
 
-" autoformat when writting the buffer
-augroup autoformatonwrite
-  autocmd!
-  autocmd BufWritePre * :Autoformat
-augroup END
+if ! has('nvim')
+  " autoformat when writting the buffer
+  augroup autoformatonwrite
+    autocmd!
+    autocmd BufWritePre * :Autoformat
+  augroup END
+endif
 
 " show tabs, trailing space, EOL, etc.
 set list lcs=tab:·⁖,trail:¶,eol:•,extends:↷,precedes:↶

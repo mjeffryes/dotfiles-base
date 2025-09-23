@@ -19,6 +19,7 @@ filesweeper
 fzf
 gh
 jq
+neovim
 reattach-to-user-namespace
 rg
 starship
