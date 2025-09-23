@@ -49,9 +49,10 @@ Public/
 .pulumi
 .terraform.d/
 
-#dotnet
+# dotnet
 .dotnet/
 .nuget/
+.local/share/NuGet/
 
 # python
 .pex
@@ -73,6 +74,8 @@ Public/
 .gitstats/
 go/
 .ionic/
+.local/share/devbox/
+.local/state/
 .minikube/
 .mysql_history
 .nix-defexpr/
