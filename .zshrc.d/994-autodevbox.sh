@@ -1,3 +1,5 @@
-autoload -U add-zsh-hook
+##  Disabling automatic devbox shell in favor of mise
 
-add-zsh-hook chpwd dbs
+# autoload -U add-zsh-hook
+
+# add-zsh-hook chpwd dbs
