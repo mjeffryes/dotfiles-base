@@ -11,13 +11,18 @@
 [rerere]
   enabled = 1
 [diff]
-  renames = true
+	renames = true
   copies = true
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
 [fetch]
   prune = true
+	pruneTags = true
 [push]
   default = simple
-  autoSetupRemote = true
+	autoSetupRemote = true
+	followTags = true
 # http://stackoverflow.com/questions/18257622/why-is-git-core-preloadindex-default-value-false
 [core]
   preloadindex = true
@@ -35,10 +40,13 @@
   newbranch = "!newbranch(){ git checkout origin/master -b $@ || git checkout origin/main -b $@; };newbranch"
   nb = newbranch
   co = checkout
+  fixup = "!fixup(){ git commit --fixup $@; };fixup"
 [pull]
   rebase = true
 [rebase]
-  autostash = true
+	autoStash = true
+	autoSquash = true
+	updateRefs = true
 [help]
   autocorrect = 1
 [init]
@@ -49,3 +57,18 @@
 [user]
   useConfigOnly = true
   name = Matthew Jeffryes
+
+[credential "https://github.com"]
+ helper =
+ helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+ helper =
+ helper = !/opt/homebrew/bin/gh auth git-credential
+[column]
+ ui = auto
+[branch]
+ sort = -committerdate
+[tag]
+ sort = version:refname
+[commit]
+ verbose = true
