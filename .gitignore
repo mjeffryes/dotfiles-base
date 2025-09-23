@@ -22,9 +22,12 @@ Public/
 .zsh_history
 .zsh_sessions
 
-# Java class files
+# Java
 *.class
 *.jar
+.gradle/
+.ivy2/
+.m2/
 
 # vim
 .vim/.netrwhist
@@ -39,39 +42,69 @@ Public/
 .gemrc
 .rbenv/
  
+# IaC/Cloud
+.azure/
+.boto
+.config/gcloud/
+.pulumi
+.terraform.d/
+
+#dotnet
+.dotnet/
+.nuget/
+
+# python
+.pex
+.pyenv
+
 # misc
 .antigen
+.asdf/
+.aspnet/
 .atom
 .cache
 .cocoapods/
+.config/asciinema/
+.config/op/
+.cookiecutter_replay/
+.cookiecutters/
+.cups/
 .dotfiles/
-.dotnet/
 .gitstats/
-.gradle/
 go/
-.ivy2/
-.nodenv
+.ionic/
+.minikube/
+.mysql_history
+.nix-defexpr/
 .op
-.oracle_jre_usage/
-.pex
-.pulumi
-.pyenv
+.pkg-cache/
 .watchman
+.wget-hsts
 .tools-cache/home/
 .tss/
 .vscode/
 *.zwc
 .zentracker/
+OrbStack/
+setup-scripts/nohup.out
 
 # node stuff
-.config
+.bun/
+.config/yarn
+.nodenv
 .npm
+.yarn/
+.yarnrc
 
 # credentials
 .arcrc
-.netrc
-.ssh
+.config/github-copilot/hosts.json
+.config/manicode/credentials.json
+.gnupg/
 .jira-credentials.yml
+.netrc
+.npmrc
+.ssh
 
 # subrepos
 workdir/
