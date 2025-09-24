@@ -18,8 +18,11 @@ fd
 filesweeper
 fzf
 gh
+git-spice
 jq
+mise
 neovim
+node
 reattach-to-user-namespace
 rg
 starship
@@ -27,6 +30,7 @@ shellcheck
 terminal-notifier
 tmux
 vim
+wget
 zentracker
 "
 
@@ -36,15 +40,15 @@ casks="
 amethyst
 coconutbattery
 dash
-docker
 firefox
 flux
 google-chrome
 grandperspective
 iterm2
 meetingbar
+notunes
 obsidian
-qbserve
+orbstack
 quicksilver
 resilio-sync
 slack
@@ -60,20 +64,20 @@ remaining="$formulae"
 while [[ $remaining = *[![:space:]]* ]]; do
   fail=""
   echo "Running: brew install $remaining"
-  brew install $remaining 2>&1 | tee "$tempfile" || fail=1
+  brew install "$remaining" 2>&1 | tee "$tempfile" || fail=1
   last_tried=$(grep -E "(pouring)|(brew reinstall)" "$tempfile" | tail -n 1 | grep -oE '[^ ]+$')
   if [[ $fail ]]; then failed+=("$last_tried"); fi
-  remaining="${remaining#*${last_tried}}"
+  remaining="${remaining#*"${last_tried}"}"
 done
 
 remaining="$casks"
 while [[ $remaining = *[![:space:]]* ]]; do
   fail=""
   echo "Running: brew install --cask $remaining"
-  brew install --cask $remaining 2>&1 | tee "$tempfile" || fail=1
+  brew install --cask "$remaining" 2>&1 | tee "$tempfile" || fail=1
   last_tried=$(grep -E "(Installing Cask)|(brew reinstall)" "$tempfile" | tail -n 1 | grep -oE '[^ ]+$')
   if [[ $fail ]]; then failed+=("$last_tried"); fi
-  remaining="${remaining#*${last_tried}}"
+  remaining="${remaining#*"${last_tried}"}"
 done
 
 if [[ ${#failed[@]} != 0 ]]; then
