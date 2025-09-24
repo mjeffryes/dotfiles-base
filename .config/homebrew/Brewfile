@@ -1,5 +1,4 @@
 tap "getgrit/tap"
-tap "homebrew/services"
 tap "mjeffryes/mjeffryes"
 
 brew "asciinema"
