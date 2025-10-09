@@ -27,7 +27,6 @@
 [core]
 	preloadindex = true
 	deltabasecachelimit = 4g
-	editor = /usr/bin/vim
 [http]
 	postBuffer = 209715200
 [alias]
@@ -64,11 +63,9 @@
 	allowedSignersFile = ~/.config/git/allowed-signers
 
 [credential "https://github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !$(which gh) auth git-credential
 [credential "https://gist.github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !$(which gh) auth git-credential
 [column]
 	ui = auto
 [branch]
