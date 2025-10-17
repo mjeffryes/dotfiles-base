@@ -43,6 +43,8 @@ Public/
 .rbenv/
  
 # IaC/Cloud
+.aws/cli/cache
+.aws/sso/
 .azure/
 .boto
 .config/gcloud/
@@ -101,6 +103,7 @@ setup-scripts/nohup.out
 
 # credentials
 .arcrc
+.aws/credentials
 .config/github-copilot/hosts.json
 .config/manicode/credentials.json
 .gnupg/

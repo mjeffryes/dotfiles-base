@@ -57,6 +57,11 @@
 [user]
 	useConfigOnly = true
 	name = Matthew Jeffryes
+	signingkey =ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEATVcpylGWH2IsYivg0tWB5YfmQCOwKvaaYYgijAm1D
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed-signers
 
 [credential "https://github.com"]
 	helper =
@@ -71,4 +76,5 @@
 [tag]
 	sort = version:refname
 [commit]
+	gpgsign = true
 	verbose = true
