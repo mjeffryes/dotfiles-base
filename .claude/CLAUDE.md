@@ -10,6 +10,7 @@
 - NEVER implement a mock mode for testing or for any purpose. We always use real data and real APIs, never mock implementations.
 - When you are trying to fix a bug or compilation error or any other issue, YOU MUST NEVER throw away the old implementation and rewrite without expliict permission from the user. If you are going to do this, YOU MUST STOP and get explicit permission from the user.
 - NEVER name things as 'improved' or 'new' or 'enhanced', etc. Code naming should be evergreen. What is new today will be "old" someday.
+- IMPORTANT: When creatting commits, do not add "Generated with Claude Code", "Co-Authored-By: Claude <noreply@anthropic.com>" or any other self promotion to the commit messages
 
 # Getting help
 
@@ -41,6 +42,7 @@
 
 # Linting
 
+- Always configure code formatting and linting for new projects
 - Make sure linting passes before the task is done
 
 # Specific Technologies
@@ -51,4 +53,9 @@
 - Do not use old fashioned methods for package management like poetry, pip or easy_install.
 - Make sure that there is a pyproject.toml file in the root directory.
 - If there isn't a pyproject.toml file, create one using uv by running uv init.
+
+## Javascript/Typescript
+
+- Use typescript everywhere possible
+- Use bun for package management unless the project explicitly requires a different package manager
 
