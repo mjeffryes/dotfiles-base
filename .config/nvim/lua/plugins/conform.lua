@@ -10,6 +10,8 @@ return {
           go = { "gofmt", "goimports" },
           -- Use a sub-list to run only the first available formatter
           javascript = { { "prettierd", "prettier" } },
+          typescript = { { "prettierd", "prettier" } },
+          vue = { { "prettierd", "prettier" } },
           bash = { "shfmt", "shellcheck" },
           sh = { "shfmt", "shellcheck" },
           zsh = { "shfmt", "shellcheck" },
